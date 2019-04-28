@@ -47,7 +47,17 @@ layout: default
                 col-xs-12
                 sidebar-container
             ">
-                <!-- Featured Tags -->
+                <!-- Articles Search -->
+                {% include sidebar-search.html %}
+
+                <!-- Recent Pulish　 -->
+                {% include recent_posts_list.html %}
+
+                <!-- Articles List -->
+                {% include archive_date.html %}
+		    
+		    
+		<!-- Featured Tags -->
                 {% include featured-tags.html %}
 
                 <!-- Short About -->
@@ -55,6 +65,9 @@ layout: default
 
                 <!-- Friends Blog -->
                 {% include friends.html %}
+		    
+		    
+		    
     		</div>
         {% endif %}
 	</div>
