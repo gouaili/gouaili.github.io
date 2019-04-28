@@ -1,0 +1,22 @@
+<section>
+<li class="repo-list-item">
+<h3> 
+  <span class="meta-info">
+     <span class="octicon octicon-file-directory"></span>
+     <a href="{{ site.url }}/archives" title="查看所有存档"><i class="icon-fixed-width icon-file-text"></i> 文章存档</a>
+  </span>
+<span class="badge" title="文章总数">{{ site.posts | size }}</span> </h3>
+<ul>
+{% assign count = 0 %}
+{% for post in site.posts %}
+  {% capture this_month %}{{ post.date | date: "%Y 年 %m 月" }}{% endcapture %}
+  {% capture next_month %}{{ post.previous.date | date: "%Y 年 %m 月" }}{% endcapture %}
+  {% assign count = count | plus: 1 %}
+  {% if forloop.last or this_month != next_month %}
+    <li><a href="{{ site.url }}/archives#{{ post.date | date: "%B-%Y" }}">{{ this_month }} ({{ count }})</a></li>
+    {% assign count = 0 %}
+  {% endif %}
+{% endfor %}
+</ul>
+</li>
+</section>
