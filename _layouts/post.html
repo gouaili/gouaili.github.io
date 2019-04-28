@@ -30,7 +30,10 @@ layout: default
                 {% endif %}
 
 				{{ content }}
-
+		    <div class="share">
+                    {% include sns-share.html %}
+                    </div>
+                       {% include sns-share.html %}
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}
