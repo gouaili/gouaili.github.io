@@ -1,11 +1,9 @@
 <section >
 <li class="repo-list-item">
-<h3> 
-  <span class="meta-info">
+<span class="meta-info">
      <span class="octicon octicon-file"></span>
      <h5><a href="{{ HOME_PATH }}" title="查看最近发表">最近发表</a> </h5>
   </span>
-</h3>  
 <ul>
 {% for post in site.posts limit:10 %}
   <li><a href="{{ post.url }}" title="查看《{{ post.title }}》">{{ post.title }}</a></li>
