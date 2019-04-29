@@ -40,7 +40,9 @@ anchorjs: true                          # if you want to customize anchor. check
 # `$ gem install jekyll-paginate`
 plugins: [jekyll-paginate]
 
-
+# Build settings  
+paginate: 10              # 一页你准备放几篇文章  
+exclude: ["portfolio"] # 
 
 # Markdown settings
 # replace redcarpet to kramdown,
