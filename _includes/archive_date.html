@@ -25,8 +25,8 @@
   {% capture next_year %}{{ post.previous.date | date: "%Y 年" }}{% endcapture %}
   {% assign count = count | plus: 1 %}
   {% if forloop.last or this_year != next_year %}
-    <li><a href="{{ site.url }}/categories_date/date/#aa{{ this_year }}" >{{ post.date | date: "%Y年" }}>({{ count }})</a></li>
-    {% assign count = 0 %}
+    <li><a href="{{ site.url }}/categories_date#{{ post.date | date: "%Y" }}">{{ this_year }} ({{ count }})</a></li>  
+  {% assign count = 0 %}
   {% endif %}
 {% endfor %}
 </ul>
