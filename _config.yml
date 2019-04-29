@@ -20,9 +20,9 @@ twitter_username:   gouaili
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
-categories_path: categories
+categories_path: categories_date
 tags_path: tags
-archive_path: archives
+#archive_path: archives
 about_path: about
 
 # Build settings
