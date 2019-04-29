@@ -55,8 +55,8 @@
                   {% else %}
                      {% assign color = 8 | minus: base %}
                   {% endif %} 
-                  <!-- <a href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> -->
-                  <a href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}" style="font-size: 2pt; color: FF5733;" title="{{ tag[0] }}" rel="{{ tag[1].size }}>{{ tag[0] }}</a>
+                  <a href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> 
+                  
               {% endfor %}           
               {% endif %}                                                                        
 </section>
