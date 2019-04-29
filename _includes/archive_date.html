@@ -5,8 +5,9 @@
      <a href="{{ site.url }}/archives" title="查看所有存档"><i class="icon-fixed-width icon-file-text"></i> 文章存档</a>
   </span>
 <span class="badge" title="文章总数">{{ site.posts | size }}</span> </h5>
-<ul>
+
 <!--原年月
+<ul>
 {% assign count = 0 %}
 {% for post in site.posts %}
   {% capture this_month %}{{ post.date | date: "%Y 年 %m 月" }}{% endcapture %}
@@ -20,8 +21,7 @@
 </ul>
 -->
 
-{% endfor %}  
-  
+<ul>
 {% for post in site.posts %}
   {% capture this_year %}{{ post.date | date: "%Y 年" }}{% endcapture %}
   {% capture next_year %}{{ post.previous.date | date: "%Y 年" }}{% endcapture %}
