@@ -7,8 +7,8 @@
     {% if include.bottom %}
         <hr class="hidden-sm hidden-xs">
     {% endif %}
-    <h5><a href="{{'/archive/' | prepend: site.baseurl }}">FEATURED TAGS</a></h5>
-    <span class="badge" title="标签总数">{{ site.featured-tags | size }}</span> 
+    <h5><a href="{{'/archive/' | prepend: site.baseurl }}">FEATURED TAGS</a>
+    <span class="badge" title="标签总数">{{ site.featured-tags | size }}</span></h5>
     <!--
     <div class="tags">
         {% capture tags %}
@@ -26,7 +26,7 @@
         {% endcapture %}
         {{ tags | split:'</a>' | sort | join:'</a>' }}
     </div>
-   -->
+     -->
     {% assign first = site.featured-tags.first %}
                {% assign max = first[1].size %}
                {% assign min = max %}
@@ -55,10 +55,8 @@
                   {% else %}
                      {% assign color = 8 | minus: base %}
                   {% endif %} 
-              <a href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
-        {% endif %}{% endfor %}
-            {% endfor %}
-          {% endif %}                                 
-                                             
+                   <a href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
+              {% endfor %}           
+              {% endif %}                                                                        
 </section>
 {% endif %}
