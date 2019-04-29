@@ -20,7 +20,10 @@ twitter_username:   gouaili
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
-
+categories_path: categories
+tags_path: tags
+archive_path: archives
+about_path: about
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
