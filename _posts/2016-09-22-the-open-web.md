@@ -10,8 +10,6 @@ tags:
   - Wechat
 ---
 
-{% include JB/setup %}
-
 > 本文首发于我的知乎专栏 [The Little Programmer](https://zhuanlan.zhihu.com/p/22561084)，转载请保留链接 ;)
 
 今天微信又刷爆了我的朋友圈 —— 小程序，之前传说的应用号。
