@@ -29,10 +29,12 @@
                     {% if page.title and page.hide-in-nav != true %}
                     <li>
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    </li>-->
-                    
+                    </li>
                     {% endif %}
-                    {% endfor %}
+                    {% endfor %}-->
+                    <li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}/">标签</a></li>
+                    <li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}/">归档</a></li>
+                    <li><a href="{{ site.BASE_PATH}}/{{ site.about_path }}">关于我</a></li>
                 </ul>
             </div>
         </div>
