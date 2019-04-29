@@ -6,7 +6,7 @@
 $(document).ready(function() {
   $('#search-form').submit(function() {
     $('#query').blur().attr('disabled', true);
-    $('#container').hide();
+    $('#main-content').hide();
     $('#loader').show();
     $.ajax({url: '/atom.xml?r=' + (Math.random() * 999999), dataType: 'xml', success: function(data) {
       var rq = new RegExp($('#query').val(), 'im');
@@ -29,9 +29,9 @@ $(document).ready(function() {
           html += '</article>';
         }
       });
-      $('#container').html(html);
+      $('#main-content').html(html);
       $('#loader').hide();
-      $('#container').show();
+      $('#main-content').show();
     }});
     $('#query').blur().attr('disabled', false);
     return false;
