@@ -21,13 +21,20 @@
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="{{ site.baseurl }}/">Home</a>
+                        <a href="{{ site.baseurl }}/">主页</a>
                     </li>
+                    
+                    <!--源目录
                     {% for page in site.pages %}
                     {% if page.title and page.hide-in-nav != true %}
                     <li>
                         <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    </li>
+                    </li>-->
+					<li><a href="{{ site.BASE_PATH}}/{{ site.archive_path }}/">归档</a></li>
+					<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}/">目录</a></li>
+					<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}/">标签</a></li>
+					<li><a href="{{ site.BASE_PATH}}/{{ site.about_path }}">关于我</a></li>
+                    
                     {% endif %}
                     {% endfor %}
                 </ul>
