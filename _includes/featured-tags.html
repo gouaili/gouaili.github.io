@@ -8,7 +8,7 @@
         <hr class="hidden-sm hidden-xs">
     {% endif %}
     <h5><a href="{{'/archive/' | prepend: site.baseurl }}">FEATURED TAGS</a>
-    <span class="badge" title="标签总数">{{ site.featured-tags | size }}</span></h5>
+    <span class="badge" title="标签总数">{{ site.tags | size }}</span></h5>
     <!--
     <div class="tags">
         {% capture tags %}
@@ -27,10 +27,10 @@
         {{ tags | split:'</a>' | sort | join:'</a>' }}
     </div>
      -->
-    {% assign first = site.featured-tags.first %}
+    {% assign first = site.tags.first %}
                {% assign max = first[1].size %}
                {% assign min = max %}
-               {% for tag in site.featured-tags offset:1 %}
+               {% for tag in site.tags offset:1 %}
                    {% if tag[1].size > max %}
                       {% assign max = tag[1].size %}
                    {% elsif tag[1].size < min %}
@@ -39,7 +39,7 @@
                {% endfor %}
                {% assign diff = max | minus: min %}
                   {% if diff != 0 %}
-                  {% for tag in site.featured-tags %}
+                  {% for tag in site.tags %}
                      {% assign temp = tag[1].size | minus: min | times: 36 | divided_by: diff %}
                      {% assign base = temp | divided_by: 4 %}
                      {% assign remain = temp | modulo: 4 %}
