@@ -46,31 +46,24 @@
 </style>
 
 {% if site.reward.alipay or site.reward.wxpay %}
-<div class="reward">
-    <button id="rewardButton" class="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>{{ site.reward_comment }}</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
       <span>赏</span>
     </button>
-  <div class="QR" style="display: none;">
-      {% if site.reward.comment %}
-        <div>
-          <span style="font-family: '微软雅黑'; font-size: 18px; ">{{ site.reward.comment }}</span>
+    <div id="QR" style="display: none;">
+      {% if site.reward.wxpay %}
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="{{ site.reward.wxpay }}" alt="{{ site.author }} WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
-        {% endif %}
-    
-        {% if site.reward.wxpay %}
-        <div class="wechat" style="display: inline-block">
-          <img class="wechat_qr" src="{{ site.reward.wxpay }}" title="用微信请{{ site.author.name}}喝杯咖啡？" alt="用微信请{{ site.author.name}}喝杯咖啡？" />
-          <p>微信支付</p>
+      {% endif %}
+      {% if site.reward.alipay %}
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="{{ site.reward.alipay }}" alt="{{ site.author }} Alipay"/>
+          <p>支付宝打赏</p>
         </div>
-        {% endif %}
-
-        {% if site.reward.alipay %}
-        <div class="alipay" style="display: inline-block">
-          <img class="alipay_qr" src="{{ site.reward.alipay }}" title="用支付宝请{{ site.author.name}}喝杯咖啡？" alt="用支付宝请{{ site.author.name}}喝杯咖啡？" />
-          <p>支付宝</p>
-        </div>
-        {% endif %}
-
-     </div>
- </div> 
+      {% endif %}
+    </div>
+  </div>
 {% endif %}
