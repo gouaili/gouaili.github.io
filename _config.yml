@@ -203,3 +203,13 @@ leancloud:
   enable: true
   app_id: Gsumqjoctp4vJY0LBdOjsDdF-gzGzoHsz
   app_key: L7EboaiRKu1lxhnh0wh5zGYe
+
+# ---------------- #
+#    Reward        #
+# ---------------- #
+
+reward:
+  enable: true
+  comment: '真诚赞赏 手有余香'
+  alipay: '/assets/img/alipay.jpg'
+  wxpay: '/assets/img/wxpay.jpg'
