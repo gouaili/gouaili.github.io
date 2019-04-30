@@ -1,88 +1,23 @@
-<!--
-Author: Ray-Eldath
-refer to:
- - https://github.com/theme-next/hexo-theme-next/blob/4bfbd67b3edc6f11b00357da6e509e5281a896f1/layout/_macro/reward.swig and
- - https://github.com/theme-next/hexo-theme-next/blob/e12bb0b27e16072eb82baa4c7dda1c41c8de7264/source/css/_common/components/post/post-reward.styl
--->
-<style media="screen">
-  .reward {
-    padding: 5px 0;
-    margin: 20px auto;
-    width: 90%;
-    text-align: center;
-  }
-
-  .rewardButton {
-    background-color: #f44236;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: '微软雅黑';
-    font-size: 18px;
-    padding: 5px 25px;
-    text-decoration: none;
-  }
-
-  .rewardButton:hover {
-    background-color: #F7877F;
-  }
-
-  .wechat:hover p {
-    animation: roll 0.1s infinite linear;
-    -webkit-animation: roll 0.1s infinite linear;
-    -moz-animation: roll 0.1s infinite linear;
-  }
-
-  .alipay:hover p {
-    animation: roll 0.1s infinite linear;
-    -webkit-animation: roll 0.1s infinite linear;
-    -moz-animation: roll 0.1s infinite linear;
-  }
-
-  .QR {
-    padding-top: 20px;
-  }
-
-  .QR a {
-    border: 0;
-  }
-
-  .QR img {
-    width: 180px;
-    max-width: 100%;
-    display: inline-block;
-    margin: 0.8em 2em 0 2em;
-  }
-</style>
-
-<div class="reward">
-  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+{% if site.reward.alipay or site.reward.wxpay %}
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>{{ site.reward_comment }}</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
       <span>赏</span>
-   </button>
-  <div class="QR" style="display: none;" >
-
-      {% if site.reward.comment %}
-        <div>
-          <span style="font-family: '微软雅黑'; font-size: 18px; ">{{ site.reward.comment }}</span>
+    </button>
+    <div id="QR" style="display: none;">
+      {% if site.wechatpay %}
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="{{ ssite.reward.wxpay }}" alt="{{ site.author }} WeChat Pay"/>
+          <p>微信打赏</p>
         </div>
-        {% endif %}
-
-        {% if site.reward.wxpay %}
-        <div class="wechat" style="display: inline-block">
-          <img class="wechat_qr" src="{{ site.reward.wxpay }}" title="用微信请{{ site.author.name}}喝杯咖啡？" alt="用微信请{{ site.author.name}}喝杯咖啡？" />
-          <p>微信支付</p>
+      {% endif %}
+      {% if site.alipay %}
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="{{ site.reward.alipay }}" alt="{{ site.author }} Alipay"/>
+          <p>支付宝打赏</p>
         </div>
-        {% endif %}
-
-        {% if site.reward.alipay %}
-        <div class="alipay" style="display: inline-block">
-          <img class="alipay_qr" src="{{ site.reward.alipay }}" title="用支付宝请{{ site.author.name}}喝杯咖啡？" alt="用支付宝请{{ site.author.name}}喝杯咖啡？" />
-          <p>支付宝</p>
-        </div>
-        {% endif %}
+      {% endif %}
+    </div>
   </div>
-</div>
+{% endif %}
 
