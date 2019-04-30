@@ -31,13 +31,13 @@
     -webkit-animation: roll 0.1s infinite linear;
     -moz-animation: roll 0.1s infinite linear;
   }
-  .QR {
+  .qr_class {
     padding-top: 20px;
   }
-  .QR a {
+  .qr_class a {
     border: 0;
   }
-  .QR img {
+  .qr_class img {
     width: 180px;
     max-width: 100%;
     display: inline-block;
@@ -48,10 +48,10 @@
 <div class="reward">
   <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
     <div>{{ site.reward_comment }}</div>
-    <a id="rewardButton" class='button' disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <button id="rewardButton" class='button' disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
       <span>赏</span>
-    </a>
-    <div id="QR" style="display: none;">
+    </button>
+    <div id="QR" class="qr_class" style="display: none;">
       {% if site.reward.wxpay %}
       
        <div class="wechat" style="display: inline-block">
