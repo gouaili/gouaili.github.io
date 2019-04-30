@@ -5,7 +5,7 @@
     width: 90%;
     text-align: center;
   }
-  .rewardButton {
+  .button {
     background-color: #f44236;
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -44,13 +44,13 @@
     margin: 0.8em 2em 0 2em;
   }
 </style>
-<div class="reward">
 {% if site.reward.alipay or site.reward.wxpay %}
+<div class="reward">
   <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
     <div>{{ site.reward_comment }}</div>
-    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <a id="rewardButton" class='button' disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
       <span>赏</span>
-    </button>
+    </a>
     <div id="QR" style="display: none;">
       {% if site.reward.wxpay %}
       
@@ -68,5 +68,6 @@
       {% endif %}
     </div>
   </div>
+ </div>
 {% endif %}
-</div>
+
