@@ -3,7 +3,7 @@ layout:     post
 title:      "「知乎」设计师如何学习前端？"
 subtitle:   "How designers learn front-end development?"
 date:       2015-10-28 12:00:00
-author:     "Hux"
+author:     "Aili"
 header-img: "img/home-bg-o.jpg"
 tags:
     - 知乎
@@ -175,15 +175,6 @@ $('.className').click(function(){
 <br><b>你需要学习如何构建 web 单页应用</b>，这是 web 的未来，包括利用 history API 或者 hash 实现路由，包括基于 Ajax + 模版引擎或者其他技术的前端渲染、包括组织较为复杂的软件设计等等
 <br>
 <br><b>我还建议你学习更多的计算机知识</b>，它们能对你的代码能起到潜移默化的作用，包括简单的计算机体系结构、更广泛的编程知识（面向对象/函数式等）、栈、堆、数组、队列、哈希表、树、图等数据结构、时间复杂度与空间复杂度以及简单的算法等等
-<br>
-<br><b>你需要了解业内的大神并阅读它们的博客/知乎/微博</b>，比如 <a data-hash="cfdec6226ece879d2571fbc274372e9f" href="//www.zhihu.com/people/cfdec6226ece879d2571fbc274372e9f" class="member_mention" data-editable="true" data-title="@尤雨溪" data-tip="p$b$cfdec6226ece879d2571fbc274372e9f">@尤雨溪</a><a data-hash="3ec3b166992a5a90a1083945d2490d38" href="//www.zhihu.com/people/3ec3b166992a5a90a1083945d2490d38" class="member_mention" data-editable="true" data-title="@贺师俊" data-tip="p$b$3ec3b166992a5a90a1083945d2490d38">@贺师俊</a><a data-hash="3212f9044005e9306aab1b61e74e7ae6" href="//www.zhihu.com/people/3212f9044005e9306aab1b61e74e7ae6" class="member_mention" data-editable="true" data-title="@张云龙" data-tip="p$b$3212f9044005e9306aab1b61e74e7ae6">@张云龙</a><a data-hash="c5198d4e9c0145aee04dd53cc6590edd" href="//www.zhihu.com/people/c5198d4e9c0145aee04dd53cc6590edd" class="member_mention" data-editable="true" data-title="@徐飞" data-tip="p$b$c5198d4e9c0145aee04dd53cc6590edd">@徐飞</a><a data-hash="20fdd386a6e59d178b8fe14e2863cb40" href="//www.zhihu.com/people/20fdd386a6e59d178b8fe14e2863cb40" class="member_mention" data-editable="true" data-title="@张克军" data-tip="p$b$20fdd386a6e59d178b8fe14e2863cb40">@张克军</a><a data-hash="c11336b8607d86bc9090bed90757a34c" href="//www.zhihu.com/people/c11336b8607d86bc9090bed90757a34c" class="member_mention" data-editable="true" data-title="@玉伯" data-tip="p$b$c11336b8607d86bc9090bed90757a34c">@玉伯</a><a data-hash="64458d15a75902cd0425732b7b757705" href="//www.zhihu.com/people/64458d15a75902cd0425732b7b757705" class="member_mention" data-editable="true" data-title="@拔赤" data-tip="p$b$64458d15a75902cd0425732b7b757705">@拔赤</a><a data-hash="0d9b98af12015c94cff646a6fc0773b5" href="//www.zhihu.com/people/0d9b98af12015c94cff646a6fc0773b5" class="member_mention" data-editable="true" data-title="@寸志" data-tip="p$b$0d9b98af12015c94cff646a6fc0773b5">@寸志</a><a data-hash="790dccce26904cdcd11b0fad3bac37b7" href="//www.zhihu.com/people/790dccce26904cdcd11b0fad3bac37b7" class="member_mention" data-editable="true" data-title="@题叶" data-tip="p$b$790dccce26904cdcd11b0fad3bac37b7">@题叶</a><a data-hash="85de6407f2219137df29b4249b91cfd5" href="//www.zhihu.com/people/85de6407f2219137df29b4249b91cfd5" class="member_mention" data-editable="true" data-title="@郭达峰" data-tip="p$b$85de6407f2219137df29b4249b91cfd5">@郭达峰</a> 等等等等，很多思想和新东西只有从他们身上才能学到。我还推荐你多参加技术交流会，多认识一些可以一起学习的小伙伴，你们可以互相交流并且一起成长
-<br>
-<br><b>你需要具备很强的自学能力、对技术有热情并且不断跟进</b>。因为 JavaScript/前端的社区非常非常活跃，有太多的新东西需要你自己来发现与学习：比如 Universal JavaScript、Isomorphic JavaScript、前端测试、HTML5 页游、WebRTC、WebSocket、CSS 4、SVG、HTTP/2、ES 7、React Native、Babel、TypeScript、Electron 等等等等…
-<br>
-<br>
-<br>虽然一下扯得有点多，但这些确实就是你未来将会遇到的。你并不需要全部掌握它们，但是却多多益善；你也可以专精在某几个方面，这已经足以让你成为非常专业的前端工程师。
-<br>
-<br><b>所以，如果你自认为涵盖了上述要求的 40%，欢迎简历发 huangxuan@wepiao.com ，实习/全职皆可～</b>
 <br>
 <br>
 <br>咦，这个结尾怪怪的……
