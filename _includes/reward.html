@@ -65,7 +65,7 @@
 
         {% if site.reward.wxpay %}
         <div class="wechat" style="display: inline-block">
-          <img class="wechat_qr" src="{{ site.reward.wxpay }}" title="用微信请{{ site.author.name}}喝杯咖啡？" alt="用微信请{{ site.author.name}}喝杯咖啡？" />
+          <img class="wechat_qr" src="{{ site.reward.wxpay | prepend: site.baseurl }}" title="用微信请{{ site.author.name}}喝杯咖啡？" alt="用微信请{{ site.author.name}}喝杯咖啡？" />
           <p>微信支付</p>
         </div>
         {% endif %}
