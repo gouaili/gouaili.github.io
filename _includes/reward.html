@@ -60,7 +60,7 @@ refer to:
 
 <div class="reward">
   <style>a{text-decoration:none}</style>
-  <a class="rewardButton" title="请{{ site.author.name }}喝杯咖啡？">赞赏支持</a>
+  <div id="rewardButton" title="请{{ site.author.name }}喝杯咖啡？">赞赏支持</div>
   <div class="QR" style="display: none;" >
 
       {% if site.reward.comment %}
@@ -89,7 +89,7 @@ refer to:
 
 <script type="text/javascript">
   $(document).ready(function() {
-    $("a.rewardButton").click(function() {
+    $("#rewardButton").click(function() {
       $("div.QR").slideToggle()
     });
   });
