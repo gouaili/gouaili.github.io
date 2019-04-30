@@ -15,7 +15,7 @@ https://github.com/kitian616/jekyll-TeXt-theme
 <!-- Main Content -->
 <div class="container">
 	<!--BY Fe 按日期归档-->
-<ul id="myTab" class="nav nav-tabs">
+<ul id="myTab" class="nav nav-tabs col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
 {% for post in site.posts %}
 
 	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
@@ -30,8 +30,8 @@ https://github.com/kitian616/jekyll-TeXt-theme
 
 {% endfor %}
 </ul>
-<div id="myTabContent" class="tab-content">
-{% for post in site.posts %}
+<div id="myTabContent" class="tab-content mini-post-list js-result d-none" >
+    {% for post in site.posts %}
 	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
 	{% if year != y %}
 		{% assign year= y %}
@@ -47,17 +47,18 @@ https://github.com/kitian616/jekyll-TeXt-theme
 			</div>
 			<hr>
 			</p>
-{% endfor %}
+    {% endfor %}
 
-{% for post in site.posts %}
+    {% for post in site.posts %}
 	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
 	{% if year != y %}
 		{% assign year = y %}
                 {% if forloop.first %}</div>{% endif %}
 	{% endif %}
-{% endfor %}
+     {% endfor %}
 
-</div>
+    </div>
+  </div>
 </div>
 <script>
     $(function () {
