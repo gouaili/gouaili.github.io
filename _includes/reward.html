@@ -59,8 +59,9 @@ refer to:
 </style>
 
 <div class="reward">
-  <style>a{text-decoration:none}</style>
-  <span class="rewardButton" title="请{{ site.author.name }}喝杯咖啡？">赞赏支持</span>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+   </button>
   <div class="QR" style="display: none;" >
 
       {% if site.reward.comment %}
@@ -82,16 +83,6 @@ refer to:
           <p>支付宝</p>
         </div>
         {% endif %}
-
-
   </div>
 </div>
 
-
-<script type="text/javascript" src="Scripts/jquery-1.4.1.min.js"></script> 
-<script type="text/javascript"> 
-$(document).ready(function () { 
-   $('#rewardButton').click(function () { 
-      $("div.QR").slideToggle()
-  }); 
-}); 
