@@ -1,3 +1,9 @@
+<!--
+Author: Ray-Eldath
+refer to:
+ - https://github.com/theme-next/hexo-theme-next/blob/4bfbd67b3edc6f11b00357da6e509e5281a896f1/layout/_macro/reward.swig and
+ - https://github.com/theme-next/hexo-theme-next/blob/e12bb0b27e16072eb82baa4c7dda1c41c8de7264/source/css/_common/components/post/post-reward.styl
+-->
 <style media="screen">
   .reward {
     padding: 5px 0;
@@ -53,7 +59,7 @@
 </style>
 
 <div class="reward">
-  <a class="rewardButton" title="请{{ site.author.name }}喝杯咖啡？">赞赏支持</a>
+  <a class="rewardButton" title="请{{ site.author.name }}喝杯咖啡？">打赏一下呗</a>
 
   <div class="QR" style="display: none;">
 
@@ -65,14 +71,14 @@
 
         {% if site.reward.wxpay %}
         <div class="wechat" style="display: inline-block">
-          <img class="wechat_qr" src="{{ site.reward.wxpay | prepend: site.baseurl }}" title="用微信请{{ site.author.name}}喝杯咖啡？" alt="用微信请{{ site.author.name}}喝杯咖啡？" />
+          <img class="wechat_qr" src="{{ site.reward.wxpay }}" title="用微信请{{ site.author.name}}喝杯咖啡？" alt="用微信请{{ site.author.name}}喝杯咖啡？" />
           <p>微信支付</p>
         </div>
         {% endif %}
 
         {% if site.reward.alipay %}
         <div class="alipay" style="display: inline-block">
-          <img class="alipay_qr" src="{{site.sidebar-avatar}}" title="用支付宝请{{ site.author.name}}喝杯咖啡？" alt="用支付宝请{{ site.author.name}}喝杯咖啡？" />
+          <img class="alipay_qr" src="{{ site.reward.alipay }}" title="用支付宝请{{ site.author.name}}喝杯咖啡？" alt="用支付宝请{{ site.author.name}}喝杯咖啡？" />
           <p>支付宝</p>
         </div>
         {% endif %}
