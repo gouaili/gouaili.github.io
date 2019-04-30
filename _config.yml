@@ -212,5 +212,6 @@ reward:
   enable: true
   comment: "真诚赞赏 手有余香"
   alipay: /assets/img/alipay.png
- # wxpay: /assets/img/wxpay.png
   wxpay:/img/avatar-hux-ny.jpg  
+ # wxpay: /assets/img/wxpay.png
+ 
