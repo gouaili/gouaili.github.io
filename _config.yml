@@ -1,7 +1,7 @@
 # Site settings
 title: AiLi Blog
 SEOTitle: AiLi的博客 | Hux Blog
-# header-img: img/home-bg.jpg
+header-img: img/home-bg.jpg
 email: together1122@yeah.net.com
 description: "关于程序与设计、黑客与画家 | AiLi，Web & Mobile Lover，Software Engineer，UX Designer | 这里是 @gouaili 的个人博客，与你一起发现更大的世界。"
 keyword: "gouaili, AiLi,博客, 个人网站, 互联网"
