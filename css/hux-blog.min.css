@@ -1818,5 +1818,4 @@ img::-moz-selection {
          white-space: nowrap;
          overflow: hidden;
 	 max-width: 250px;
-	 list-style-type: square;
 }
