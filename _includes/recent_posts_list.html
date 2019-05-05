@@ -9,7 +9,9 @@
 <div>
 <ul>
 {% for post in site.posts limit:10 %}
-  <li><a class="sidebar-post-title" href="{{ post.url }}" title="查看《{{ post.title }}》">{{ post.title }}</a></li>
+  <li class="sidebar-post-title">
+     <a href="{{ post.url }}" title="查看《{{ post.title }}》">{{ post.title }}</a>
+  </li>
 {% endfor %}
 </ul>
 </div>
