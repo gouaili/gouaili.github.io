@@ -37,14 +37,14 @@ nav: true
                 {% if forloop.first %}{% else %}</div>{% endif %}
                 <div class="tab-pane fade{% if forloop.first %} in active{% endif %}" id="aa{{ y }}">
 	{% endif %}
-		<p>
-			<div class="post-preview">
-		    <a href="{{ post.url }}" title="{{ post.title }}" >
-			     <time datetime="{{ post.date | date_to_string }}">{{ post.date | date: "%Y-%m-%d" }}</time>
-		       &nbsp;&nbsp;{{ post.title }}
+	  <p>
+	     <div class="post-preview">
+	     <a href="{{ post.url }}" title="{{ post.title }}" >
+	     <time datetime="{{ post.date | date_to_string }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+		     &nbsp;&nbsp;{{ post.title }}
 		    </a>
-			</div>	
-			</p>
+	     </div>	
+          </p>
      {% endfor %}
 
      {% for post in site.posts %}
@@ -52,8 +52,8 @@ nav: true
 	{% if year != y %}
 		{% assign year = y %}
                 {% if forloop.first %}</div>{% endif %}
+	       <hr>
 	{% endif %}
-      <hr>
     {% endfor %}
    </div>
 </div>
