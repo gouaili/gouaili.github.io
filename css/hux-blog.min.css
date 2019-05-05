@@ -1806,3 +1806,10 @@ img::-moz-selection {
 	background: #e7e3f3
 }
 
+#myTab a:hover,#myTab .nav.nav-tabs:hover,#myTab a:active,#myTab .nav.nav-tabs:active,#myTab a.focus,#myTab .nav.nav-tabs.focus {
+	background-color: #0085a1!important
+}
+
+#myTab a.focus,#myTab .nav.nav-tabs {
+	box-shadow: rgba(0,0,0,.117647) 0 1px 6px,rgba(0,0,0,.239216) 0 1px 4px
+}
