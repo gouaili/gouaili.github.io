@@ -1813,3 +1813,8 @@ img::-moz-selection {
 #myTab a.focus,#myTab .nav.nav-tabs {
 	box-shadow: rgba(0,0,0,.117647) 0 1px 6px,rgba(0,0,0,.239216) 0 1px 4px
 }
+.sidebar-post-title{
+	 text-overflow: ellipsis;
+         white-space: nowrap;
+         overflow: hidden;
+}
