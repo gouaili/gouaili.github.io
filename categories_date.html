@@ -44,7 +44,6 @@ nav: true
 		       &nbsp;&nbsp;{{ post.title }}
 		    </a>
 			</div>
-			<hr>
 			</p>
      {% endfor %}
 
@@ -54,6 +53,7 @@ nav: true
 		{% assign year = y %}
                 {% if forloop.first %}</div>{% endif %}
 	{% endif %}
+        <hr>
     {% endfor %}
    </div>
 </div>
