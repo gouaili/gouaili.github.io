@@ -1814,7 +1814,6 @@ img::-moz-selection {
 	box-shadow: rgba(0,0,0,.117647) 0 1px 6px,rgba(0,0,0,.239216) 0 1px 4px
 }
 .sidebar-post-title ul {
-	 max-width: 150px;
 	 text-overflow: ellipsis;
          white-space: nowrap;
          overflow: hidden;	 
