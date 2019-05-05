@@ -45,15 +45,18 @@ nav: true
 		    </a>
 	     </div>	
           </p>
-	     <hr>
-     {% endfor %}
+	    
+    <!-- {% endfor %}-->
 
-     {% for post in site.posts %}
+     <!--{% for post in site.posts %}
 	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
 	{% if year != y %}
 		{% assign year = y %}
-                {% if forloop.first %}</div>{% endif %}
+                {% if forloop.first %}
+	  </div>
+	{% endif %}-->
 	{% endif %}
+	 <hr>
     {% endfor %}
    </div>
 </div>
