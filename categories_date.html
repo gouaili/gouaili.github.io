@@ -6,7 +6,10 @@ header-img: "img/tag-bg.jpg"
 head_padding: "55px"
 nav: true
 ---
+<!-- Page Header -->	
+{% include intro-header.html type='page' short=true %}
 
+<div class="container">
 <!--BY Fe 按日期归档-->
 <ul id="myTab" class="nav nav-tabs">
 {% for post in site.posts %}
@@ -50,6 +53,7 @@ nav: true
 	{% endif %}
 {% endfor %}
 
+</div>
 </div>
 <script>
     $(function () {
