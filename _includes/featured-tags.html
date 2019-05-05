@@ -35,7 +35,7 @@
         {{ tags | split:'</a>' | sort | join:'</a>' }}
     </div>
      -->
-<ul>
+<div style="padding-left: 10px;">
 {% assign first = site.tags.first %}
 {% assign max = first[1].size %}
 {% assign min = max %}
@@ -69,6 +69,6 @@
 {% endif %}
  <!-- <a href="{{ site.baseurl }}/archive/?tag={{ tag[0] | url_encode }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> -->
                   
-</ul>                                                                                 
+</div>                                                                                 
 </section>
 {% endif %}
