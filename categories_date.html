@@ -43,8 +43,7 @@ nav: true
 			     <time datetime="{{ post.date | date_to_string }}">{{ post.date | date: "%Y-%m-%d" }}</time>
 		       &nbsp;&nbsp;{{ post.title }}
 		    </a>
-			</div>
-			<hr>
+			</div>	
 			</p>
      {% endfor %}
 
@@ -54,6 +53,7 @@ nav: true
 		{% assign year = y %}
                 {% if forloop.first %}</div>{% endif %}
 	{% endif %}
+      <hr>
     {% endfor %}
    </div>
 </div>
