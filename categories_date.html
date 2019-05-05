@@ -34,9 +34,8 @@ nav: true
 	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
 	{% if year != y %}
 		{% assign year= y %}
-                {% if forloop.first %}{% else %}
-	{% endif %}
-         
+                {% if forloop.first %}
+	{% else %}  
 	  <div class="tab-pane fade{% if forloop.first %} in active{% endif %}" id="aa{{ y }}">
 	{% endif %}
 	  <p>
