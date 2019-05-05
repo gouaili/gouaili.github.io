@@ -34,8 +34,10 @@ nav: true
 	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
 	{% if year != y %}
 		{% assign year= y %}
-                {% if forloop.first %}{% else %}</div>{% endif %}
-                <div class="tab-pane fade{% if forloop.first %} in active{% endif %}" id="aa{{ y }}">
+                {% if forloop.first %}{% else %}
+	{% endif %}
+         
+	  <div class="tab-pane fade{% if forloop.first %} in active{% endif %}" id="aa{{ y }}">
 	{% endif %}
 	  <p>
 	     <div class="post-preview">
@@ -46,19 +48,12 @@ nav: true
 	     </div>	
           </p>
 	    
-    <!-- {% endfor %}-->
-
-     <!--{% for post in site.posts %}
-	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
-	{% if year != y %}
-		{% assign year = y %}
-                {% if forloop.first %}
-	  </div>
-	{% endif %}-->
 	{% endif %}
 	 <hr>
     {% endfor %}
    </div>
+ </div>	  
+	  
 </div>
 </div>
 </div>
