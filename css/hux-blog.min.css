@@ -1814,11 +1814,7 @@ img::-moz-selection {
 	box-shadow: rgba(0,0,0,.117647) 0 1px 6px,rgba(0,0,0,.239216) 0 1px 4px
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: disc;
-}
+
 .sidebar-post-title {
 	 max-width: 250px;
 	 text-overflow: ellipsis;
