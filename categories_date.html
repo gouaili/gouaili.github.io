@@ -10,25 +10,27 @@ nav: true
 {% include intro-header.html type='page' short=true %}
 
 <div class="container">
-<div class="row">
-<!--BY Fe 按日期归档-->
-<ul id="myTab" class="nav nav-tabs">
-{% for post in site.posts %}
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+   <!--BY Fe 按日期归档-->
+   <ul id="myTab" class="nav nav-tabs">
+       {% for post in site.posts %}
 
-	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
-	{% if year != y %}
+	  {% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
+	 {% if year != y %}
 		{% assign year = y %}
 
 	    <li{% if forloop.first %} class="active"{% endif %}>
 		  <a href="/date/#aa{{ y }}" data-toggle="tab">{{ post.date | date: "%Y年" }}</a>
-    </li>
-
+            </li>
+  
 	{% endif %}
 
-{% endfor %}
-</ul>
-<div id="myTabContent" class="tab-content">
-{% for post in site.posts %}
+    {% endfor %}
+  </ul>
+	
+   <div id="myTabContent" class="tab-content">
+     {% for post in site.posts %}
 	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
 	{% if year != y %}
 		{% assign year= y %}
@@ -44,18 +46,21 @@ nav: true
 			</div>
 			<hr>
 			</p>
-{% endfor %}
+     {% endfor %}
 
-{% for post in site.posts %}
+     {% for post in site.posts %}
 	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
 	{% if year != y %}
 		{% assign year = y %}
                 {% if forloop.first %}</div>{% endif %}
 	{% endif %}
-{% endfor %}
+    {% endfor %}
+   </div>
 </div>
 </div>
 </div>
+
+
 <script>
     $(function () {
 			   var _hash = insertStr(window.location.hash,1,"a");
