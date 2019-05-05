@@ -3,6 +3,7 @@ layout: default
 title: "ategories Date"
 description: "日期"
 header-img: "img/tag-bg.jpg"
+head_padding: "55px"
 nav: true
 ---
 <!-- Page Header -->	
@@ -28,15 +29,15 @@ nav: true
     {% endfor %}
   </ul>
 	
-   <div id="myTabContent" class="mini-post-list js-result d-none">
+   <div id="myTabContent" class="tab-content">
      {% for post in site.posts %}
 	{% capture y %}{{ post.date | date:"%Y" }}{% endcapture %}
 	{% if year != y %}
 		{% assign year= y %}
                 {% if forloop.first %}{% else %}</div>{% endif %}
                 <div class="tab-pane fade{% if forloop.first %} in active{% endif %}" id="aa{{ y }}">
-	        {% endif %}
-	            <p>
+	{% endif %}
+		<p>
 			<div class="post-preview">
 		    <a href="{{ post.url }}" title="{{ post.title }}" >
 			     <time datetime="{{ post.date | date_to_string }}">{{ post.date | date: "%Y-%m-%d" }}</time>
