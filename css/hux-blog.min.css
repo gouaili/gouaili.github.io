@@ -1817,5 +1817,5 @@ img::-moz-selection {
 	 text-overflow: ellipsis;
          white-space: nowrap;
          overflow: hidden;
-	 max-width: 30px;
+	 max-width: 150px;
 }
