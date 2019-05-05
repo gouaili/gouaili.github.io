@@ -36,8 +36,11 @@ nav: true
 		{% assign year = y %}
                 {% if forloop.first %}
 	        {% else %}
+	 </div>
+	 <hr>
 	 {% endif %}
-        <div class="tab-pane fade{% if forloop.first %} in active{% endif %}" id="aa{{ y }}">{% endif %}  </div>
+	    
+        <div class="tab-pane fade{% if forloop.first %} in active{% endif %}" id="aa{{ y }}">{% endif %}  
         <p>
 	 <div class="post-preview">
 	  <a href="{{ post.url }}" title="{{ post.title }}" >
@@ -45,7 +48,6 @@ nav: true
 		       &nbsp;&nbsp;{{ post.title }}
 	</a>
 	</div>
-	<hr>
         </p>
       {% endfor %}
 
