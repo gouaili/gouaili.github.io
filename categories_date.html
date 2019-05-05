@@ -10,6 +10,7 @@ nav: true
 {% include intro-header.html type='page' short=true %}
 
 <div class="container">
+<div class="row">
 <!--BY Fe 按日期归档-->
 <ul id="myTab" class="nav nav-tabs">
 {% for post in site.posts %}
@@ -52,7 +53,7 @@ nav: true
                 {% if forloop.first %}</div>{% endif %}
 	{% endif %}
 {% endfor %}
-
+</div>
 </div>
 </div>
 <script>
