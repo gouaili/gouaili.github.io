@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://gouaili.github.io/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/categories_date/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/2018/09/27/avoiding-success-at-all-cost/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/2018/06/30/dreamer/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/2017/12/12/halting-problem/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/2017/01/09/wechat-miniapp-ux/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/2016/09/22/the-open-web/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/2015/10/28/how-designer-learn-fe/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/2015/06/15/alitrip-strategy/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=%E4%BA%A7%E5%93%81</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=%E9%98%BF%E9%87%8C</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=%E7%9F%A5%E4%B9%8E</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=Web</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=UX%2FUI</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=Wechat</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=%E8%AE%A1%E7%AE%97%E7%90%86%E8%AE%BA</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=Facebook</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=%E7%94%9F%E6%B4%BB</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=Haskell</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=PL</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/archive/?tag=%E7%AC%94%E8%AE%B0</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://gouaili.github.io/about/</loc>
+  <lastmod>2019-05-06T05:51:43+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
