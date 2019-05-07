@@ -32,7 +32,7 @@ tags:
 |MD4|128|	128	|512|	64	|32|	是|
 |MD5|128	|128|	512	|64 |32|	是|
 |PANAMA|256	|8736|256|	否	|32|	是|
-|RadioGatún|Arbitrarily |long|58words|3words|否|	1-64|	否
+|RadioGatún|Arbitrarily long|58 words|3 words|否|	1-64|	否|
 |RIPEMD|	128	|128|	512	|64	|32	|是|
 RIPEMD-128/256|	128/256	|128/256	|512	|64|	32|	否|
 |RIPEMD-160/320	|160/320	|160/320|	512	|64	|32	|否|
