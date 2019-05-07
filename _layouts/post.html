@@ -30,6 +30,9 @@ layout: default
                 {% endif %}
 
 				{{ content }}
+		    <div class="share">
+                {% include sns-share.html %}
+		</div>
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}
@@ -90,9 +93,6 @@ layout: default
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 sidebar-container">
-		<div class="share">
-                {% include sns-share.html %}
-		</div>
                 {% include reward.html %}
                 <!-- Comment -->	    
                 {% include comments.html %}
