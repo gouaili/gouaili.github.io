@@ -12,10 +12,10 @@ future: true
 
 # SNS settings
 RSS: true
-weibo_username:     gouaili
-zhihu_username:     gouaili
+#weibo_username:     gouaili
+#zhihu_username:     gouaili
 github_username:    gouaili
-twitter_username:   gouaili
+#twitter_username:   gouaili
 #facebook_username:  huxpro
 #linkedin_username:  firstname-lastname-idxxxx
 
