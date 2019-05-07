@@ -30,9 +30,7 @@ layout: default
                 {% endif %}
 
 				{{ content }}
-		    <div class="share">
-                {% include sns-share.html %}
-		</div>
+		   
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     {% if page.previous.url %}
@@ -72,6 +70,7 @@ layout: default
     <!-- Side Catalog Container -->
 		
         {% if page.catalog %}
+		
             <div class="
                 col-lg-2 col-lg-offset-0
                 visible-lg-block
@@ -88,7 +87,9 @@ layout: default
         {% endif %}
 
     <!-- Sidebar Container -->
-
+             <div class="share">
+                {% include sns-share.html %}
+		</div>
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
