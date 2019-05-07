@@ -4,6 +4,7 @@ title: "散列/哈希函数"
 subtitle: "散列/哈希函数"
 author: "Aili"
 header-mask: 0.2
+catalog: true
 tags:
   - 函数
   - 密码
