@@ -3,6 +3,7 @@ layout: post
 title: "散列/哈希函数"
 subtitle: ""
 author: "Aili"
+header-style: text
 catalog: true
 tags:
   - 函数
