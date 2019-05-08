@@ -43,19 +43,7 @@ anchorjs: true                          # if you want to customize anchor. check
 # plugins:  [jekyll-paginate, jekyll-sitemap]
 plugins: [jekyll-paginate]
 
-# Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
-kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-  syntax_highlighter_opts:
-    span:
-      line_numbers: false
-    block:
-      line_numbers: true
-      start_line: 1
+
 
 
 
@@ -116,19 +104,37 @@ page-mathjax: false
 # ---------------- #
 subscribe_rss: /feed.xml
 
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
 # ---------------- #
 #      Jekyll      #
 # ---------------- #
+# markdown: kramdown
+# post_asset_folder: true
+# kramdown:
+#     input: GFM
+# highlighter: rouge
+# paginate: 10
+# lsi: false
+# quiet: false
+# excerpt_separator: "\n\n"
+# permalink: /:year/:month/:day/:title/
+
+
+
 markdown: kramdown
-post_asset_folder: true
 kramdown:
-    input: GFM
-highlighter: rouge
-paginate: 10
-lsi: false
-quiet: false
-excerpt_separator: "\n\n"
-permalink: /:year/:month/:day/:title/
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
 gems:
     - jekyll-github-metadata
     - rouge
