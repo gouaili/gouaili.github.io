@@ -50,9 +50,9 @@ public class test1 {
         int n = s.length();
         //System.out.println(n);
         int strmax=0;
-        for (int i=0;i<=n;i++)
+        for (int i=0;i<n;i++)
         {
-            for (int j=i;j<=n;j++)
+            for (int j=i+1;j<=n;j++)
             {
                 //System.out.println(s.substring(i,j));
                 strmax=(ifrepeat(s,i,j)>strmax)?ifrepeat(s,i,j):strmax;
