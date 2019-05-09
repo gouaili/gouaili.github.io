@@ -3,7 +3,8 @@ layout: post
 title: "无重复字符的最长子串"
 subtitle: "The longest substring without duplicate characters"
 author: "Aili"
-date: 
+header-style: text
+catalog: true
 tags:
   - Web
   - Wechat
