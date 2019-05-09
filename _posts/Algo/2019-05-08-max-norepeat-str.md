@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "The longest substring without duplicate characters"
-subtitle: "no "
+title: "无重复字符的最长子串"
+subtitle: "The longest substring without duplicate characters"
 author: "Aili"
-date:
+date: 
 tags:
   - Web
   - Wechat
