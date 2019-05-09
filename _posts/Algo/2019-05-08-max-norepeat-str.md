@@ -42,19 +42,16 @@ tags:
  */
 import java.util.HashSet;
 import java.util.Set;
-
 public class test1 {
 
     public static int lengthOfLongestSubstring(String s)
     {
         int n = s.length();
-        //System.out.println(n);
         int strmax=0;
         for (int i=0;i<n;i++)
         {
             for (int j=i+1;j<=n;j++)
             {
-                //System.out.println(s.substring(i,j));
                 strmax=(ifrepeat(s,i,j)>strmax)?ifrepeat(s,i,j):strmax;
             }
         }
@@ -70,9 +67,7 @@ public class test1 {
             if (str.contains(s.charAt(k))==false)
             {
                 str.add(s.charAt(k));
-                //System.out.println(str);
                 strlen=str.size();
-                //System.out.println(strlen);
             }
             else
             {
