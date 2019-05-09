@@ -33,3 +33,59 @@ tags:
 >     请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
      
  
+、、、java
+
+/* 1.遍历出所有的子串
+ *  2.检查每一个遍历出的子串是不是不重复。
+ */
+import java.util.HashSet;
+import java.util.Set;
+
+public class test1 {
+
+    public static int lengthOfLongestSubstring(String s)
+    {
+        int n = s.length();
+        //System.out.println(n);
+        int strmax=0;
+        for (int i=0;i<=n;i++)
+        {
+            for (int j=i;j<=n;j++)
+            {
+                //System.out.println(s.substring(i,j));
+                strmax=(ifrepeat(s,i,j)>strmax)?ifrepeat(s,i,j):strmax;
+            }
+        }
+        return strmax;
+    }
+
+    public static int ifrepeat(String s,int i,int j)
+    {
+        Set<Character> str = new HashSet<Character>();
+        int strlen=0;
+        for (int k=i;k<j;k++)
+        {
+            if (str.contains(s.charAt(k))==false)
+            {
+                str.add(s.charAt(k));
+                //System.out.println(str);
+                strlen=str.size();
+                //System.out.println(strlen);
+            }
+            else
+            {
+                str.clear();
+                continue;
+            }
+
+        }
+        return strlen;
+    }
+
+    public static void main(String args[])
+    {
+          System.out.println(lengthOfLongestSubstring("pwwkew"));
+    }
+}
+
+、、、
