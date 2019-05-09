@@ -85,3 +85,7 @@ public class test1 {
     }
 }
 ```
+
+结果：
+> 时间复杂度 O(n^3)
+
