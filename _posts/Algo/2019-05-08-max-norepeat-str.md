@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "Web 在继续离我们远去"
-subtitle: "After the release of Wechat Mini-Program"
+title: "The longest substring without duplicate characters"
+subtitle: "no "
 author: "Aili"
-header-img: "img/post-bg-web.jpg"
-header-mask: 0.4
 date:
 tags:
   - Web
