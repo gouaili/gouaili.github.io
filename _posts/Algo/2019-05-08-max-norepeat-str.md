@@ -137,3 +137,4 @@ public class Max_noreapt_str {
 [k, e, w, a, b]
 5
 ```
+问题：数组的开销需调整。
