@@ -1853,3 +1853,10 @@ img::-moz-selection {
 	line-height: 40px;
 	vertical-align: top
 }
+.fa-chevron-up {
+	color: rgba(252,252,252,0.8)
+}
+
+.fa-chevron-up:before {
+	color: rgba(252,252,252,0.81)
+}
