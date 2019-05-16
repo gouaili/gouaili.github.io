@@ -8,7 +8,6 @@ header-img: "img/post-bg-alitrip.jpg"
 catalog: true
 tags:
     - 产品
-    - 阿里
 ---
 
 > 本篇为该系列第一篇 —— 行业与战略，让我们聊聊行业、战略与格局。
