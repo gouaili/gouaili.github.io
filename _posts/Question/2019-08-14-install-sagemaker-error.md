@@ -22,7 +22,7 @@ ERROR: Command errored out with exit status 1: python setup.py egg_info Check th
 ```bash
 pip install --user --upgrade setuptools
 ```
-测试成功
+测试成功，下面是测试实例过程。
 
 ``` bash
 
