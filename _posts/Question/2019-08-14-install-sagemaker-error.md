@@ -4,9 +4,9 @@ title:      "ERROR: Command errored out with exit status 1"
 subtitle:   "rror in sagemaker setup command: 'extras_require' must be a dictionary "
 date:       2019-08-14
 author:     "Aili"
-catalog: true
 tags:
-    - 系统安装
+    - 数据科学
+    -- 系统包安装
 ---
 
 > 本篇为安装数据科学使用的包的过程中出现的错误
