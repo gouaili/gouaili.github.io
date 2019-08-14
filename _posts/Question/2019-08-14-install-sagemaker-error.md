@@ -9,7 +9,20 @@ tags:
     - 系统安装
 ---
 
-> 本篇为该系列第一篇 —— 行业与战略，让我们聊聊行业、战略与格局。
+> 本篇为安装数据科学使用的包的过程中出现的错误
+
+错误：
+
+```bash 
+ error in sagemaker setup command: 'extras_require' must be a dictionary whose values are strings or lists of strings containing valid project/version requirement specifiers.
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.
+```
+解决方案：
+```bash
+pip install --user --upgrade setuptools
+```
+测试成功
 
 ``` bash
 
