@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      "ERROR: Command errored out with exit status 1"
+subtitle:   "rror in sagemaker setup command: 'extras_require' must be a dictionary "
+date:       2019-08-14
+author:     "Aili"
+catalog: true
+tags:
+    - 系统安装
+---
+
+> 本篇为该系列第一篇 —— 行业与战略，让我们聊聊行业、战略与格局。
 
 gouaili:~/Documents/sagemaker-python-sdk master$ sudo pip install sagemaker
 Password:
