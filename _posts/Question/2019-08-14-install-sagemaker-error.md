@@ -10,9 +10,10 @@ tags:
     
 ---
 
+
 > 本篇为安装数据科学使用的包的过程中出现的错误
 
-错误：
+错误log：
 
 ```bash 
  error in sagemaker setup command: 'extras_require' must be a dictionary whose values are strings or lists of strings containing valid project/version requirement specifiers.
