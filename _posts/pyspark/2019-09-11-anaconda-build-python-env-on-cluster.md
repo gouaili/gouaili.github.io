@@ -25,11 +25,12 @@ tags:
 二. 下载Anaconda
         Anaconda是一个科学计算的Python发行版本，里面预安装了很多常用包，比如numpy、scipy、pandas、scikit-learn等，并提供了conda工具，很方便地管理第三方包，创建虚拟环境等。由于集群上的Python环境是2.7，所以应下载Anaconda2相关版本。
 
-      清华镜像下载地址：https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda2-5.0.1-Linux-x86_64.sh
+ 清华镜像下载地址：https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/Anaconda2-5.0.1-Linux-x86_64.sh
 
-      安装直接输入命令：bash Anaconda2-5.0.0.1-Linux-x86_64.sh ，基本就一直enter，最后会提示是否加入环境变量[yes/no]?，选择yes
+ 安装直接输入命令：bash Anaconda2-5.0.0.1-Linux-x86_64.sh ，基本就一直enter，最后会提示是否加入环境变量[yes/no]?，选择yes
 
-      conda工具使用教程：https://www.jianshu.com/p/d2e15200ee9b
+ conda工具使用教程：https://www.jianshu.com/p/d2e15200ee9b
+
 
 如果安装成功，执行python出现下面的显示：
 ![img](/img/in-post/20190911/anaconda_install_sucess.png)
