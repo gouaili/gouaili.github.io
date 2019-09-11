@@ -79,7 +79,7 @@ tar -zcvf dl_env.tar dl_env/
 ```
 hope dfs -put ./dl_env.zip viewfs:///user/hadoop-shplat/nlp/xxx/ （指定自己的目录）
 ```
-![img](/img/in-post/20190911/zip_to_hdfs.pngg)
+![img](/img/in-post/20190911/zip_to_hdfs.png)
 
 四. 在pyspark集群上使用自己的Python环境
   如果使用hope，需要指定相关参数，给pyspark指定要用哪个Python环境，完整hope文件配置参考： 
