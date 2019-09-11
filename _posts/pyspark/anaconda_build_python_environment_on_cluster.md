@@ -32,20 +32,25 @@ tags:
       conda工具使用教程：https://www.jianshu.com/p/d2e15200ee9b
 
 如果安装成功，执行python出现下面的显示：
-
+![img](/img/in-post/20190911/anaconda_install_sucess.png)
 
 三. 利用conda创建虚拟环境
 1.创建名为"dl_env"的python2虚拟环境
 ```Shell
 conda create -n dl_env python=2 （-n 指定给虚拟环境命名，python=2指定Python版本）
-
-    中间会提示是否继续，输入“y”，创建成功后，会出现以下界面：
 ```
+![img](/img/in-post/20190911/conda_env_install.png)
+
+中间会提示是否继续，输入“y”，创建成功后，会出现以下界面：
+![img](/img/in-post/20190911/env_sucess.png)
+
+
 
 2.激活创建的环境
 ```Shell
 source activate dl_env
 ```
+![img](/img/in-post/20190911/source_env.png)
 
 3.安装第三方包
    同样可以使用pip或者conda安装自己想要的包：
@@ -55,6 +60,9 @@ pip install numpy -i https://pypi.douban.com/simple (-i 指定pip安装源，这
 或者
 conda install numpy
 ```
+![img](/img/in-post/20190911/pip_install_package.png)
+
+
  4.将虚拟环境打包
     安装的所有虚拟环境都在anaconda2/envs文件夹下面，进入到该目录，将对于一个环境打包：
 
@@ -65,11 +73,13 @@ zip -r dl_env.zip dl_env
 ```
 tar -zcvf dl_env.tar dl_env/
 ```
+![img](/img/in-post/20190911/env_zip.png)
 
  5.通过hope将虚拟环境包上传到HDFS上
 ```
-hope dfs -put ./dl_env.zip viewfs:///user/hadoop-shplat/nlp/tanwei/ （指定自己的目录）
+hope dfs -put ./dl_env.zip viewfs:///user/hadoop-shplat/nlp/xxx/ （指定自己的目录）
 ```
+![img](/img/in-post/20190911/zip_to_hdfs.pngg)
 
 四. 在pyspark集群上使用自己的Python环境
   如果使用hope，需要指定相关参数，给pyspark指定要用哪个Python环境，完整hope文件配置参考： 
@@ -103,7 +113,7 @@ usergroup = hadoop-shplat
 spark_version = spark-2.2
 ​
 # 作业对应的主类名
-main_py = jieba_cut.py
+main_py = main.py
 ​
 # 执行作业必须的参数，提供默认配置，可以修改，不能删除
 [env_args]
